@@ -25,43 +25,8 @@
 # }while(contador < 10);
 
 .text
-li 0,10
-nop
-li 1,0
-mov $t0,$r2
-nop
-li 0,0
-mov $t0,$r10
-mov $t0,$r11
-nop
-lb $r0,$r10 
-nop
-lb $r1,$r11
-nop
-mov $r0,$r3
-div 00,0,$r3,$r1
-nop
-jz 2
-nop
-mov $r0,$r5
-sb $r10,$r1
-sb $r11,$r5
-nop
-inc 00,0,$r10
-nop
-mov $r10,$r4
-nop
-div 00,0,$r4,$r2
-jz -10
-nop
-inc 00,0,$r11
-mov $r11,$r10
-mov $r11,$r5
-nop
-div 00,0,$r5,$r2
-jz -14
-nop
 halt
+# ..
 .data
 .byte 9
 .byte 8
